@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!--タイトル-->
+        <title>hoge</title>
+        <!--jsファイルの読み込み-->
+        <script type="application/javascript" src="calendar.js"></script>
+    </head>
+    
+    <body>
+        <!--年の選択用セレクトボックス-->
+        <select id="year"></select>
+
+        <!--月の選択用セレクトボックス-->
+        <select id="month"></select>
+
+        <!--押すとカレンダーが表示されるボタン-->
+        <!--hoge.js内のgenerate_table()関数が実行される-->
+        <input type="button" value="表示" onclick="generate_table()">
+
+        <!--カレンダー設置用要素-->
+        <!--この要素の子要素としてカレンダーが入る-->
+        <div id="table"></div>
+    </body>
+</html>
